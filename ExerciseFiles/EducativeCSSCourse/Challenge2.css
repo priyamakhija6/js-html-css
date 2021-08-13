@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 1em;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+.movie {
+    width:100vw;
+    padding: 40px 40px 40px 200px;
+    /*background-image: url("http://i.imgur.com/2tiJEnP.png");
+    background-size: cover ;*/
+    font-size: 1em;
+    box-sizing: border-box;
+    /*background shorthand in line below*/
+    /*background: url("http://i.imgur.com/2tiJEnP.png") 0% 0%/cover*/
+    /*image over image => first image is image on top*/
+    background: url("http://i.imgur.com/lcm5byq.png") 20px 20px/ 120px 240px no-repeat,
+    url("http://i.imgur.com/2tiJEnP.png") 0% 0%/cover;
+}
+/*change opacity of background image without changing it for other elements*/
+/*Solution - add an overlay with a semi-transparent background color on top of the background image*/
+.movie:before {
+    width:100vw;
+    padding: 40px 40px 40px 200px;
+    position: absolute;
+    background-color: rgba(0,0,0,0.75);
+}
+
+.movie-btn {
+    display: block;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 10px;
+    margin-top: 50px;
+    cursor: pointer;
+    background-position: center center;
+}
+
+

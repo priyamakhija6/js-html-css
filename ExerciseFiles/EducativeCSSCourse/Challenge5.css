@@ -1,0 +1,38 @@
+.btn {
+    padding: 2rem 4rem;
+    border: 2px solid var(--incolor, black);
+    border-radius: 2px;
+    margin: 5px;
+    background: white;
+    font-family: Sans-serif;
+    font-size: 1em;
+    font-weight: bolder;
+}
+
+.btn:hover {
+    background: var(--incolor,black) ;
+    color: #ffe3fe;
+    cursor: pointer;
+}
+
+.btn.red {
+    --incolor: red
+}
+
+.btn.yellow {
+    --incolor: yellow
+
+}
+
+.btn.green{
+    --incolor: green
+}
+
+.btn.blue{
+    --incolor: blue
+}
+
+.btn.orange{
+    --incolor: orange
+}
+

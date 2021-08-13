@@ -1,0 +1,36 @@
+<html>
+   <head>  
+        Number 1 : <input type="number" id="num1" value=""><br>
+        Number 2 : <input type="number" id="num2" value=""><br>
+        <input type="button" value = "+" onclick="add(document.getElementById('num1').value,document.getElementById('num2').value)"></button>
+        <input type="button" value = "-" onclick="subtract(document.getElementById('num1').value,document.getElementById('num2').value)"></button>
+        <input type="button" value = "*" onclick="multiply(document.getElementById('num1').value,document.getElementById('num2').value)"></button>
+        <input type="button" value = "/" onclick="divide(document.getElementById('num1').value,document.getElementById('num2').value)"></button>
+        <input type="button" value = "C" onclick="clearAll()"></button>
+        </head>
+   
+   <body>
+       <script type="text/javascript">
+        function add(num1,num2) {
+          var result = Number(num1)+Number(num2);
+          alert(result);
+        }
+        function subtract(num1,num2) {
+          var result = num1-num2;
+          alert(result);
+        }
+        function multiply(num1,num2) {
+          var result = num1*num2;
+          alert(result);
+        }
+        function divide(num1,num2) {
+          var result = num1/num2;
+          alert(result);
+        }
+        function clearAll() {
+            document.getElementById('num1').value = "";
+            document.getElementById('num2').value = "";
+        }
+       </script>
+   </body>  
+</html>

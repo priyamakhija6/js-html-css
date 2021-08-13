@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo&family=Sawarabi+Gothic&family=Work+Sans:wght@300;400&display=swap');
+/*body - display - flex, horizontally and vertically centerec*/
+body{
+    background-color: #8e7f7f;
+    height: 100vh;
+    weight: 100vw;
+    font-family: 'Work Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
+    color: #444444 ;
+}
+
+main {
+    display: flex;
+    background-color: #e2d5d5;
+    width: 60%;
+    height: auto;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+/*make the width of both 50% i.e half and equal.*/
+section,form {
+    padding: 50px 70px;
+    width: 50%;
+}
+
+section {
+    text-align: center;
+
+}
+
+/*reduce the width and height of image*/
+img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+p{
+    line-height: 1.2;
+}
+
+input.no-outline {
+    width: 220px;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: solid;
+    border-color: #865858;
+    margin-bottom: 20px;
+    background-color: #e2d5d5;
+    padding: 20px 20px 10px 0px;
+    font-size: 14px;
+}
+
+input:focus,
+button:focus {
+    outline: none;
+}
+
+label {
+    font-size: 12px;
+}
+
+[type="checkbox"]
+{
+    vertical-align:middle;
+    font-size: 12px;
+}
+
+button {
+    margin-top: 20px;
+    background-color: #865858;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+div.separator {
+    height: 270px;
+    width: 1px;
+    background-color: #865858;
+    position: absolute;
+    display: flex;
+    right: 50%;
+    top: 35%;
+}

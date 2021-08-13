@@ -1,0 +1,40 @@
+body {
+    background-color: gray;
+}
+
+div h1,
+div h2 {
+    color: green;
+}
+
+section h1,
+section h2 {
+    color: blue;
+}
+
+a:link {
+    color: #0000ff;
+}
+a:visited {
+    color: black;
+}
+a:hover {
+    color: red;
+}
+a:active {
+    color: #ff0000;
+}
+
+div :first-child {
+    color: red;
+    font-size: 10px;
+}
+div :last-child {
+    background-color: red;
+    color: white;
+}
+div :only-child {
+    background-color: blue;
+    color: white;
+}
+
